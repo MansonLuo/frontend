@@ -54,12 +54,12 @@
                 cursor: pointer;
             }
 
-            .form-group .login {
+            .form-group .register {
                 background-color: #4CAF50;
                 float: left;
             }
 
-            .form-group .register {
+            .form-group .login{
                 float: right;
             }
         </style>
@@ -67,8 +67,13 @@
 
     <body>
         <div class="container">
-            <h3>Login to your account</h3>
+            <h3>Register account</h3>
             <form action="" method="POST">
+                <div class="form-group">
+                    <label for="fullname">fullname:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
                 <div class="form-group">
                     <label for="email">email:</label>
                     <input type="text" id="email" name="email" required>
@@ -80,8 +85,8 @@
                 </div>
 
                 <div class="form-group form-group-submit">
-                    <input type="submit" class="login" value="Login">
                     <input type="submit" class="register" value="Register">
+                    <input type="submit" class="login" value="Login">
                 </div>
             </form>
         </div>
